@@ -1,6 +1,26 @@
 <!-- Tailwind & AOS (add to settings > HTML > head) -->
 
-<link ref="stylesheet" href="Index.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil Shrestha Portfolio</title>
+
+  <!-- Tailwind CSS (from CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="Index.css" />
+</head>
+
+<body>
+  
+
 <nav class="fixed top-0 left-0 w-full bg-white shadow z-50">
   <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
     <h1 class="text-xl font-bold">Sahil Shrestha</h1>
@@ -13,29 +33,58 @@
   </div>
 </nav>
 
-<section class="min-h-screen flex flex-col justify-center items-center pt-32 text-center bg-gradient-to-br from-gray-100 to-gray-200" data-aos="fade-up" data-aos-delay="200">
-  <img src="https://cdn.jsdelivr.net/gh/Sahil-Stha/Portfolio-Materials@main/Avatar_Image.jpeg" alt="Sahil’s Avatar" class="w-85 h-72 rounded-2xl mb-4 shadow-lg" />
+<section
+  class="min-h-screen flex flex-col justify-center items-center pt-32 text-center bg-gradient-to-br from-gray-100 to-gray-200"
+  data-aos="fade-up"
+  data-aos-delay="200"
+>
+  <img
+    src="https://cdn.jsdelivr.net/gh/Sahil-Stha/Portfolio-Materials@main/Avatar_Image.jpeg"
+    alt="Sahil’s Avatar"
+    class="w-85 h-72 rounded-2xl mb-4 shadow-lg"
+  />
   <h1 class="text-5xl font-bold mb-2">Hi, I'm Sahil 👋</h1>
-  <p class="typing text-lg max-w-xl mb-6">Software Engineering Graduate | AI & Web Dev Enthusiast</p>
-  <a href="#contact" class="px-6 py-3 bg-black text-white rounded hover:-translate-y-1 hover:shadow-lg transition">Get In Touch</a>
+  <p class="typing text-lg max-w-xl mb-6">
+    Software Engineering Graduate | AI & Web Dev Enthusiast
+  </p>
+  <a
+    href="#contact"
+    class="px-6 py-3 bg-black text-white rounded hover:-translate-y-1 hover:shadow-lg transition"
+    >Get In Touch</a
+  >
 </section>
 
-<section id="about" class="py-16 px-6 bg-white" data-aos="fade-up" data-aos-delay="200">
+<section
+  id="about"
+  class="py-16 px-6 bg-white"
+  data-aos="fade-up"
+  data-aos-delay="200"
+>
   <div class="max-w-4xl mx-auto text-center">
     <h2 class="text-3xl font-bold mb-4">About Me</h2>
     <p class="text-gray-700 leading-relaxed">
-      Hi, I’m Sahil Shrestha — a recent Software Engineering graduate from the University of Canberra with a strong interest in AI, machine learning, and creative problem-solving.
-      I enjoy combining clean design with functional code, and I’m always exploring new tools and technologies to expand my skillset.
+      Hi, I’m Sahil Shrestha — a recent Software Engineering graduate from the
+      University of Canberra with a strong interest in AI, machine learning, and
+      creative problem-solving. I enjoy combining clean design with functional
+      code, and I’m always exploring new tools and technologies to expand my
+      skillset.
     </p>
   </div>
 </section>
 
-<section id="projects" class="py-20 px-6 bg-gray-100" data-aos="fade-up" data-aos-delay="200">
+<section
+  id="projects"
+  class="py-20 px-6 bg-gray-100"
+  data-aos="fade-up"
+  data-aos-delay="200"
+>
   <div class="max-w-6xl mx-auto">
     <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
     <div class="grid md:grid-cols-2 gap-8">
       <!-- Crypto Project -->
-      <div class="relative bg-white shadow rounded-xl p-8 group overflow-hidden transition duration-300 min-h-[400px]">
+      <div
+        class="relative bg-white shadow rounded-xl p-8 group overflow-hidden transition duration-300 min-h-[400px]"
+      >
         <img
           src="https://cdn.jsdelivr.net/gh/Sahil-Stha/Portfolio-Materials@main/Crypto.jpg"
           alt="Crypto Price Prediction"
@@ -43,31 +92,51 @@
         />
         <h3 class="text-xl font-semibold mb-1">Crypto Price Prediction</h3>
         <p class="mb-4">Forecasting crypto prices using AI</p>
-        <div class="absolute inset-0 bg-white p-6 opacity-0 group-hover:opacity-100 transition-opacity overflow-y-auto z-10">
+        <div
+          class="absolute inset-0 bg-white p-6 opacity-0 group-hover:opacity-100 transition-opacity overflow-y-auto z-10"
+        >
           <p class="text-sm text-gray-700">
             GitHub:
-            <a href="https://github.com/ChaiThere/CapstoneProject2025/tree/main/CapstoneCodes" target="_blank" class="text-blue-500 hover:underline">
+            <a
+              href="https://github.com/ChaiThere/CapstoneProject2025/tree/main/CapstoneCodes"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
               View Crypto Forecasting Project on GitHub
             </a>
           </p>
           <p class="mt-2 text-sm text-gray-700">
-            Built a predictive system using ARIMA and deep learning-based LSTM models to forecast cryptocurrency prices (BTC, ETH, XRP, ADA). Integrated Google Trends, VADER sentiment analysis, and trading volume data. Achieved 85% backtesting accuracy using Bayesian optimization. Visualized insights with Seaborn and Matplotlib.
+            Built a predictive system using ARIMA and deep learning-based LSTM
+            models to forecast cryptocurrency prices (BTC, ETH, XRP, ADA).
+            Integrated Google Trends, VADER sentiment analysis, and trading
+            volume data. Achieved 85% backtesting accuracy using Bayesian
+            optimization. Visualized insights with Seaborn and Matplotlib.
           </p>
         </div>
       </div>
 
       <!-- Fitness Project -->
-      <div class="relative bg-white shadow rounded-xl p-8 group overflow-hidden transition duration-300 min-h-[400px]">
+      <div
+        class="relative bg-white shadow rounded-xl p-8 group overflow-hidden transition duration-300 min-h-[400px]"
+      >
         <img
           src="https://cdn.jsdelivr.net/gh/Sahil-Stha/Portfolio-Materials@main/Fitness.jpg"
           alt="Fitness Tracker App"
           class="w-full h-65 object-cover rounded mb-4 transition-opacity duration-300 group-hover:opacity-0"
         />
-        <h3 class="text-xl font-semibold mb-1">Fitness Tracker App (System Design)</h3>
+        <h3 class="text-xl font-semibold mb-1">
+          Fitness Tracker App (System Design)
+        </h3>
         <p class="mb-4">Concept for a cross-platform health app</p>
-        <div class="absolute inset-0 bg-white p-6 opacity-0 group-hover:opacity-100 transition-opacity overflow-y-auto z-10">
+        <div
+          class="absolute inset-0 bg-white p-6 opacity-0 group-hover:opacity-100 transition-opacity overflow-y-auto z-10"
+        >
           <p class="text-sm text-gray-700">
-            Designed a mobile app concept to monitor steps, hydration, and sleep. UI built in Figma with dark/light mode, weekly analytics, and push notifications. Firebase planned for backend support and real-time sync. System was designed for modularity and ease of scaling.
+            Designed a mobile app concept to monitor steps, hydration, and
+            sleep. UI built in Figma with dark/light mode, weekly analytics, and
+            push notifications. Firebase planned for backend support and
+            real-time sync. System was designed for modularity and ease of
+            scaling.
           </p>
         </div>
       </div>
@@ -75,38 +144,95 @@
   </div>
 </section>
 
-
 <div class="text-center my-8" id="resume">
-  <h2 class="text-2xl font-bold mb-2"> My Resume</h2>
-  <p class="mb-4 text-gray-600">Click below to download a PDF version of my resume.</p>
-  <a href="https://raw.githubusercontent.com/Sahil-Stha/Portfolio-Materials/main/Sahil_Shrestha_Resume.pdf" download class="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition">Download Resume</a>
+  <h2 class="text-2xl font-bold mb-2">My Resume</h2>
+  <p class="mb-4 text-gray-600">
+    Click below to download a PDF version of my resume.
+  </p>
+  <a
+    href="https://raw.githubusercontent.com/Sahil-Stha/Portfolio-Materials/main/Sahil_Shrestha_Resume.pdf"
+    download
+    class="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition"
+    >Download Resume</a
+  >
 </div>
 
-<section id="contact" class="py-20 px-6 bg-white" data-aos="fade-up" data-aos-delay="200">
+<section
+  id="contact"
+  class="py-20 px-6 bg-white"
+  data-aos="fade-up"
+  data-aos-delay="200"
+>
   <div class="max-w-xl mx-auto text-center">
     <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
     <form id="contactForm" class="space-y-4 text-left" novalidate>
       <div>
-        <input id="name" name="name" placeholder="Your Name" required class="w-full p-3 border rounded" />
-        <p id="nameError" class="text-sm text-red-500 mt-1 hidden">Please enter your name.</p>
+        <input
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+          class="w-full p-3 border rounded"
+        />
+        <p id="nameError" class="text-sm text-red-500 mt-1 hidden">
+          Please enter your name.
+        </p>
       </div>
       <div>
-        <input id="email" name="email" type="email" placeholder="Your Email" required class="w-full p-3 border rounded" />
-        <p id="emailError" class="text-sm text-red-500 mt-1 hidden">Please enter a valid email.</p>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Your Email"
+          required
+          class="w-full p-3 border rounded"
+        />
+        <p id="emailError" class="text-sm text-red-500 mt-1 hidden">
+          Please enter a valid email.
+        </p>
       </div>
       <div>
-        <textarea id="message" name="message" placeholder="Your Message" required rows="5" class="w-full p-3 border rounded"></textarea>
-        <p id="messageError" class="text-sm text-red-500 mt-1 hidden">Please enter a message.</p>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          required
+          rows="5"
+          class="w-full p-3 border rounded"
+        ></textarea>
+        <p id="messageError" class="text-sm text-red-500 mt-1 hidden">
+          Please enter a message.
+        </p>
       </div>
       <input type="text" name="_gotcha" style="display:none" />
-      <button type="submit" id="submitBtn" class="w-full bg-black text-white py-2 rounded hover:-translate-y-1 hover:shadow-lg transition">Send Message</button>
-      <div id="successMessage" class="hidden text-green-600 font-medium mt-4">✅ Message sent successfully!</div>
-      <div id="failMessage" class="hidden text-red-500 font-medium mt-4">❌ Failed to send. Try again later.</div>
+      <button
+        type="submit"
+        id="submitBtn"
+        class="w-full bg-black text-white py-2 rounded hover:-translate-y-1 hover:shadow-lg transition"
+      >
+        Send Message
+      </button>
+      <div id="successMessage" class="hidden text-green-600 font-medium mt-4">
+        ✅ Message sent successfully!
+      </div>
+      <div id="failMessage" class="hidden text-red-500 font-medium mt-4">
+        ❌ Failed to send. Try again later.
+      </div>
     </form>
 
     <div class="mt-6 flex justify-center space-x-6 text-2xl">
-      <a href="https://www.instagram.com/stha_sahil/" target="_blank" class="text-gray-700 hover:text-black"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/sahil-shrestha-9b6599344/" target="_blank" class="text-gray-700 hover:text-black"><i class="fab fa-linkedin"></i></a>
+      <a
+        href="https://www.instagram.com/stha_sahil/"
+        target="_blank"
+        class="text-gray-700 hover:text-black"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/sahil-shrestha-9b6599344/"
+        target="_blank"
+        class="text-gray-700 hover:text-black"
+        ><i class="fab fa-linkedin"></i
+      ></a>
     </div>
   </div>
 </section>
@@ -117,13 +243,41 @@
   <div class="max-w-6xl mx-auto text-center">
     <p class="text-sm text-gray-600 mb-4">Connect with me:</p>
     <div class="flex justify-center space-x-6">
-      <a href="https://www.instagram.com/stha_sahil/" target="_blank" class="hover:scale-110 transition-transform">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-8 h-8" />
+      <a
+        href="https://www.instagram.com/stha_sahil/"
+        target="_blank"
+        class="hover:scale-110 transition-transform"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+          alt="Instagram"
+          class="w-8 h-8"
+        />
       </a>
-      <a href="https://www.linkedin.com/in/sahil-shrestha-9b6599344/" target="_blank" class="hover:scale-110 transition-transform">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-8 h-8" />
+      <a
+        href="https://www.linkedin.com/in/sahil-shrestha-9b6599344/"
+        target="_blank"
+        class="hover:scale-110 transition-transform"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+          alt="LinkedIn"
+          class="w-8 h-8"
+        />
       </a>
     </div>
-    <p class="mt-4 text-xs text-gray-400">© 2025 Sahil Shrestha. All rights reserved.</p>
+    <p class="mt-4 text-xs text-gray-400">
+      © 2025 Sahil Shrestha. All rights reserved.
+    </p>
   </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- Your Custom JS -->
+<script src="index.js"></script>
+
+</body>
