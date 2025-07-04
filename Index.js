@@ -1,3 +1,4 @@
+alert("Hello World")
 AOS.init({ duration: 800, once: true });
 
 const form = document.getElementById('contactForm');
